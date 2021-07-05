@@ -95,4 +95,25 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+        'docusaurus-plugin-react-docgen-typescript',
+        {
+            src: ['../packages/**/src/*.tsx'],
+            global: true,
+            parserOptions: {
+                // pass parserOptions to react-docgen-typescript
+                // here is a good starting point which filters out all
+                // types from react
+                propFilter: (prop, component) => {
+                    if (prop.parent) {
+                        return !prop.parent.fileName.includes('@types/react');
+                    }
+
+                    return true;
+                },
+            },
+        },
+    ],
+],
 };
