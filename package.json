@@ -1,0 +1,7 @@
+{
+  "name": "noia-ui",
+  "version": "1.0.0",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
