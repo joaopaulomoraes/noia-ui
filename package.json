@@ -11,8 +11,9 @@
   },
   "scripts": {
     "start": "cd ./website && yarn start",
-    "lint": "eslint ./packages/**/*",
-    "g": "yarn plop --plopfile generators/plopfile.js"
+    "lint": "eslint ./packages/** --max-warnings=0",
+    "g": "yarn plop --plopfile generators/plopfile.js",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.2",
@@ -22,7 +23,14 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.1",
+    "lint-staged": ">=10",
     "plop": "^2.7.4",
     "prettier": "2.3.2"
+  },
+  "lint-staged": {
+    "./packages/*": [
+      "yarn lint --fix"
+    ]
   }
 }
