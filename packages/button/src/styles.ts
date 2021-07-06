@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 import { lighten } from 'polished'
 
-import {ButtonProps} from './'
+import { ButtonProps } from './'
 
 export const Wrapper = styled.button<ButtonProps>`
   ${({ bg }) => css`
