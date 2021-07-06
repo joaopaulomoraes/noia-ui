@@ -1,2 +1,9 @@
-<h1 align="center">noia-ui</h1>
-<h3 align="center">🦆 The best UI framework out there 🦆</h3>
+# noia-ui
+
+### 🦆 The best UI framework out there 🦆
+
+To generate component starter package
+
+```bash
+  yarn g <package-name>
+```

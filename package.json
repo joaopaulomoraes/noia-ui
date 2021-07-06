@@ -10,6 +10,10 @@
     ]
   },
   "scripts": {
-    "start": "cd ./website && yarn start"
+    "start": "cd ./website && yarn start",
+    "g": "yarn plop --plopfile generators/plopfile.js"
+  },
+  "devDependencies": {
+    "plop": "^2.7.4"
   }
 }
