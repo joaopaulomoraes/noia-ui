@@ -13,18 +13,25 @@
     "start": "cd ./website && yarn start",
     "lint": "eslint ./packages/** --max-warnings=0",
     "g": "yarn plop --plopfile generators/plopfile.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "polished": "^4.1.3",
     "react": "^17.0.1",
-    "styled-components": "^5.3.0",
-    "polished": "^4.1.3"
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/react": "^6.3.4",
     "@types/react": "^17.0.13",
     "@types/styled-components": "^5.1.11",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
