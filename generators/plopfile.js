@@ -21,6 +21,11 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
+        path: '../packages/{{dashCase name}}/stories/{{dashCase name}}.stories.tsx',
+        templateFile: 'component/stories/stories.tsx.hbs'
+      },
+      {
+        type: 'add',
         path: '../packages/{{dashCase name}}/index.ts',
         templateFile: 'component/index.ts.hbs'
       },
@@ -38,7 +43,7 @@ module.exports = (plop) => {
         type: 'add',
         path: '../packages/{{dashCase name}}/tsconfig.json',
         templateFile: 'component/tsconfig.json.hbs'
-      },
+      }
     ]
   })
 }
