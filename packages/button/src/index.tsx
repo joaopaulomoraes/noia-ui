@@ -3,13 +3,13 @@ import React, { ButtonHTMLAttributes } from 'react'
 import * as S from './styles'
 
 export type ButtonProps = {
-  bg: string
-  children: React.ReactNode
+  bg?: string
+  children?: React.ReactNode
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-const Button = ({ bg, children, ...props }: ButtonProps) => {
+const Button = ({ bg = "#fff", children }: ButtonProps) => {
   return (
-    <S.Wrapper {...props} bg={bg}>
+    <S.Wrapper bg={bg}>
       {children}
     </S.Wrapper>
   )

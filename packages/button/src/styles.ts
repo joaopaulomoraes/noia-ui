@@ -12,7 +12,7 @@ export const Wrapper = styled.button<ButtonProps>`
     cursor: pointer;
 
     &:hover {
-      background-color: ${lighten('0.1', bg)};
+      background-color: ${lighten('0.1', bg!)};
     }
   `}
 `
