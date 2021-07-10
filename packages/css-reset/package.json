@@ -1,0 +1,9 @@
+{
+  "name": "@noia-ui/css-reset",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A React component that is a base button.",
+  "devDependencies": {
+    "react": "^17.0.1"
+  }
+}
