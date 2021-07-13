@@ -9,8 +9,12 @@
       "website"
     ]
   },
-  "hoist": true,
-  "nohoist": ["@docusaurus/*"],
+  "nohoist": [
+    "**/html-minifier-terser"
+  ],
+  "resolutions": {
+    "terser": "4.8.0"
+  },
   "scripts": {
     "start:docs": "cd ./website && yarn start",
     "build:docs": "cd ./website && yarn build",
