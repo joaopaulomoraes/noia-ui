@@ -10,7 +10,9 @@
     ]
   },
   "scripts": {
-    "start": "cd ./website && yarn start",
+    "start:docs": "cd ./website && yarn start",
+    "build:docs": "cd ./website && yarn build",
+    "serve:docs": "cd ./website && yarn serve",
     "lint": "eslint ./packages/** --max-warnings=0",
     "g": "yarn plop --plopfile generators/plopfile.js",
     "prepare": "husky install",
