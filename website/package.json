@@ -2,6 +2,9 @@
   "name": "@noia-ui/docs",
   "version": "1.0.0",
   "private": true,
+  "resolutions": {
+    "terser": "4.8.0"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
