@@ -9,6 +9,9 @@
       "website"
     ]
   },
+  "nohoist": [
+    "**/html-minifier-terser"
+  ],
   "scripts": {
     "start:docs": "cd ./website && yarn start",
     "build:docs": "cd ./website && yarn build",
