@@ -9,9 +9,8 @@
       "website"
     ]
   },
-  "nohoist": [
-    "**/html-minifier-terser"
-  ],
+  "hoist": true,
+  "nohoist": ["@docusaurus/*"],
   "scripts": {
     "start:docs": "cd ./website && yarn start",
     "build:docs": "cd ./website && yarn build",
