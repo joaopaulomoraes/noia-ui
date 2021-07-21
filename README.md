@@ -59,14 +59,8 @@ $ yarn g <package-name>
           </sub>
       </a>
     </td>
-		<td>
-      <a href="https://github.com/JonathaGomes">
-        <img src="https://github.com/JonathaGomes.png" width="100px;" alt=""/>
-        <br />
-          <sub>
-            <b>Jonatha Gomes</b>
-          </sub>
-      </a>
-    </td>
   </tr>
 </table>
+
+<hr />
+<p align="center">Readme template by <a href="https://github.com/JonathaGomes">Jonatha Gomes</a></p>
