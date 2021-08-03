@@ -4,8 +4,12 @@ exports[`<Button /> should render a button 1`] = `
 .c0 {
   background-color: #fff;
   padding: 10px 20px;
-  border: none;
+  border-radius: 2rem;
+  border-style: none;
+  border-color: #000;
   cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .c0:hover {

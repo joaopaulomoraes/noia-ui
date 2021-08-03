@@ -8,6 +8,8 @@ export default {
 
 export const Default = () => (
   <>
-    <Button bg="#fb62f6">Button</Button>
+    <Button borderColor="#fb62f6" variant="outlined" size="lg" bg="#fb62f6">Button</Button>
+    <Button size="md" bg="#fb62f6">Button</Button>
+    <Button size="sm" bg="#fb62f6">Button</Button>
   </>
 )
