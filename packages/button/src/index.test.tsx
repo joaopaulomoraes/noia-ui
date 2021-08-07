@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 
 import Button from '..'
 
@@ -19,5 +19,14 @@ describe('<Button />', () => {
     screen.logTestingPlaygroundURL()
 
     expect(screen.getByRole('button', { name: /hello/i })).toHaveStyle('background-color: red')
+  })
+
+  it('should call onClick prop when clicked', () => {
+    const handleClick = jest.fn()
+
+    render(<Button onClick={handleClick}>Click me</Button>)
+    fireEvent.click(screen.getByText(/click me/i))
+    
+    expect(handleClick).toHaveBeenCalledTimes(1)
   })
 })
