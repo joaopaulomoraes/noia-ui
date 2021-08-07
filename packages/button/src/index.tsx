@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from 'react'
+import React, { ButtonHTMLAttributes, CSSProperties } from 'react'
 
 import * as S from './styles'
 
@@ -9,6 +9,7 @@ export type ButtonProps = {
   borderColor?: string
   children?: React.ReactNode
   onClick?: () => void
+  style?: CSSProperties
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 const Button = ({
@@ -17,10 +18,12 @@ const Button = ({
   bg = '#fff',
   borderColor = '#000',
   children,
-  onClick
+  onClick,
+  style
 }: ButtonProps) => {
   return (
     <S.Wrapper
+      style={style}
       onClick={onClick}
       variant={variant}
       size={size}
