@@ -11,9 +11,22 @@ export type ButtonProps = {
   onClick?: () => void
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-const Button = ({ variant = "filled", size = "md", bg = "#fff", borderColor = "#000", children, onClick }: ButtonProps) => {
+const Button = ({
+  variant = 'filled',
+  size = 'md',
+  bg = '#fff',
+  borderColor = '#000',
+  children,
+  onClick
+}: ButtonProps) => {
   return (
-    <S.Wrapper onClick={onClick} variant={variant} size={size} bg={bg} borderColor={borderColor}>
+    <S.Wrapper
+      onClick={onClick}
+      variant={variant}
+      size={size}
+      bg={bg}
+      borderColor={borderColor}
+    >
       {children}
     </S.Wrapper>
   )
