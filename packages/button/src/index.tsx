@@ -1,17 +1,39 @@
-import React, { ButtonHTMLAttributes } from 'react'
+import React, { HTMLAttributes } from 'react'
 
-import * as S from './styles'
+import { SystemProps, x } from '@xstyled/styled-components'
+
+import { theme } from '@noia-ui/theme'
 
 export type ButtonProps = {
-  bg?: string
   children?: React.ReactNode
-} & ButtonHTMLAttributes<HTMLButtonElement>
+  variant?: string
+  size?: string
+  isFullWidth?: boolean
+} & HTMLAttributes<HTMLButtonElement> &
+  SystemProps
 
-const Button = ({ bg = "#fff", children }: ButtonProps) => {
+const buttonStyles = theme.components.Button
+
+const Button = ({
+  variant = 'solid',
+  size = 'md',
+  isFullWidth,
+  children,
+  ...props
+}: ButtonProps) => {
+  const { variants } = buttonStyles
+
+  const { sizes } = buttonStyles
+
+  const baseStyle = {
+    ...buttonStyles.baseStyle,
+    w: isFullWidth ? 'full' : 'auto'
+  }
+
   return (
-    <S.Wrapper bg={bg}>
+    <x.button {...baseStyle} {...sizes[size]} {...variants[variant]} {...props}>
       {children}
-    </S.Wrapper>
+    </x.button>
   )
 }
 

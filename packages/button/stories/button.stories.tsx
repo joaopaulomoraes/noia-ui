@@ -1,13 +1,20 @@
 import React from 'react'
 
-import Button from '../src'
+import { Story, Meta } from '@storybook/react'
+
+import Button, { ButtonProps } from '../src'
 
 export default {
-  title: 'Button'
-}
+  title: 'Button',
+  component: Button,
+  args: {
+    children: 'Example button',
+    variant: 'solid',
+    size: 'md',
+    isFullWidth: true
+  }
+} as Meta
 
-export const Default = () => (
-  <>
-    <Button bg="#fb62f6">Button</Button>
-  </>
+export const Default: Story<ButtonProps> = (args) => (
+  <Button variant="solid" {...args} />
 )
