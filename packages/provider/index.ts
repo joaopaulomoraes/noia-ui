@@ -1,3 +1,3 @@
-import Provider from './src'
+import ThemeProvider from './src'
 
-export default Provider
+export default { ThemeProvider }

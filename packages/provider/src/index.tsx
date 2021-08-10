@@ -1,8 +1,10 @@
 import React from 'react'
 
-import { ThemeProvider as StyledProvider } from 'styled-components'
+import {
+  ThemeProvider as StyledProvider,
+  Preflight
+} from '@xstyled/styled-components'
 
-import CssReset from '@noia-ui/css-reset'
 import defaultTheme from '@noia-ui/theme'
 
 type ProviderProps = {
@@ -17,7 +19,7 @@ const ThemeProvider = ({
   children
 }: ProviderProps) => (
   <StyledProvider theme={theme}>
-    {resetCSS && <CssReset />}
+    {resetCSS && <Preflight />}
 
     {children}
   </StyledProvider>
