@@ -12,7 +12,7 @@ export type ButtonProps = {
 } & HTMLAttributes<HTMLButtonElement> &
   SystemProps
 
-const Button = ({ isFullWidth, children, ...props }: ButtonProps) => {
+const Button = React.forwardRef(({ isFullWidth, children, ...props }: ButtonProps, ref) => {
   const styles = useStyle('Button', { ...props })
 
   const buttonStyle = {
@@ -21,10 +21,10 @@ const Button = ({ isFullWidth, children, ...props }: ButtonProps) => {
   }
 
   return (
-    <x.button {...buttonStyle} {...props}>
+    <x.button ref={ref} {...buttonStyle} {...props}>
       {children}
     </x.button>
   )
-}
+})
 
 export default Button
