@@ -1,10 +1,9 @@
 {
-  "name": "@noia-ui/provider",
+  "name": "@noia-ui/system",
   "version": "1.0.0",
   "license": "MIT",
   "description": "A React component that is a base button.",
   "devDependencies": {
-    "react": "^17.0.1",
-    "@noia-ui/theme": "^1.0.0"
+    "react": "^17.0.1"
   }
 }

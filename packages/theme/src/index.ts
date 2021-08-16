@@ -3,10 +3,12 @@ import foundations from './foundations'
 
 import GlobalStyles from './global'
 
-export const theme = {
+const theme = {
   components,
   foundations,
   GlobalStyles
 }
+
+export { components, foundations, GlobalStyles }
 
 export default theme

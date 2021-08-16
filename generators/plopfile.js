@@ -16,11 +16,6 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: '../packages/{{dashCase name}}/src/styles.tsx',
-        templateFile: 'component/src/styles.ts.hbs'
-      },
-      {
-        type: 'add',
         path: '../packages/{{dashCase name}}/stories/{{dashCase name}}.stories.tsx',
         templateFile: 'component/stories/stories.tsx.hbs'
       },

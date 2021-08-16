@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react'
 
 import { SystemProps, x } from '@xstyled/styled-components'
 
-import { theme } from '@noia-ui/theme'
+import { useStyle } from '@noia-ui/system'
 
 export type ButtonProps = {
   children?: React.ReactNode
@@ -12,26 +12,16 @@ export type ButtonProps = {
 } & HTMLAttributes<HTMLButtonElement> &
   SystemProps
 
-const buttonStyles = theme.components.Button
+const Button = ({ isFullWidth, children, ...props }: ButtonProps) => {
+  const styles = useStyle('Button', { ...props })
 
-const Button = ({
-  variant = 'solid',
-  size = 'md',
-  isFullWidth,
-  children,
-  ...props
-}: ButtonProps) => {
-  const { variants } = buttonStyles
-
-  const { sizes } = buttonStyles
-
-  const baseStyle = {
-    ...buttonStyles.baseStyle,
+  const buttonStyle = {
+    ...styles,
     w: isFullWidth ? 'full' : 'auto'
   }
 
   return (
-    <x.button {...baseStyle} {...sizes[size]} {...variants[variant]} {...props}>
+    <x.button {...buttonStyle} {...props}>
       {children}
     </x.button>
   )
