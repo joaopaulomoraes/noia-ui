@@ -1,6 +1,6 @@
 <h1 align="center">
-    <img src="https://pbs.twimg.com/profile_images/1402705056672145411/P6cwsedd_400x400.jpg" width="100px;" /> <br/>
-		Noia UI
+  <img width="156" src="https://user-images.githubusercontent.com/16243531/129814945-e4ffdba8-d175-480c-aafc-b6b19bd148b8.jpg" />
+  <p>Noia UI</p>
 </h1>
 
 <p align="center">
@@ -39,28 +39,11 @@ $ yarn g <package-name>
 
 ## Creators
 
-<table>
-  <tr>
-    <td>
-      <a href="https://github.com/danicunhac">
-        <img src="https://github.com/danicunhac.png" width="100px;" alt="Daniel Cunha"/>
-        <br />
-          <sub>
-            <b>Daniel Cunha</b>
-          </sub>
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/viniciushvc">
-        <img src="https://github.com/viniciushvc.png" width="100px;" alt=""/>
-        <br />
-          <sub>
-            <b>Vinicius Vicentini</b>
-          </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/fotontech/noia-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=fotontech/noia-ui" />
+</a>
+
+Made with [contributors-img](https://contrib.rocks)
 
 <hr />
 <p align="center">Readme template by <a href="https://github.com/JonathaGomes">Jonatha Gomes</a></p>
