@@ -1,6 +1,7 @@
 <h1 align="center">
   <img width="156" src="https://user-images.githubusercontent.com/16243531/129814945-e4ffdba8-d175-480c-aafc-b6b19bd148b8.jpg" />
-  <p>Going beyond</p>
+  <p>Build your imagination.<p>
+  <p>Go beyond.</p>
 </h1>
 
 <p align="center">
@@ -11,11 +12,11 @@
 <p align="center">
   <a href="#getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#community">Community</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#creators">Creators</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contributors">Contributors</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <h2 align="center"> 
-	🚧  Noia UI 🚀 in development...  🚧
+	🚧  In development  🚧
 </h2>
 
 ## Getting Started
@@ -37,13 +38,10 @@ $ yarn g <package-name>
 
 - Join <a href="https://discord.com/invite/ir-alem">on the official discord server</a>
 
-## Creators
+## Contributors
 
 <a href="https://github.com/fotontech/noia-ui/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=fotontech/noia-ui" />
 </a>
 
 Made with [contributors-img](https://contrib.rocks)
-
-<hr />
-<p align="center">Readme template by <a href="https://github.com/JonathaGomes">Jonatha Gomes</a></p>
