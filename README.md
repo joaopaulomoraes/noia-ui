@@ -1,6 +1,6 @@
 <h1 align="center">
   <img width="156" src="https://user-images.githubusercontent.com/16243531/129814945-e4ffdba8-d175-480c-aafc-b6b19bd148b8.jpg" />
-  <p>Noia UI</p>
+  <p>Going beyond</p>
 </h1>
 
 <p align="center">
